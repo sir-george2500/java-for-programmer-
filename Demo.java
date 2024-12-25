@@ -1,17 +1,21 @@
+import OOP.Keyboard;
+import OOP.AdvanceKeyboard;
+
 class Demo {
   public static void main(String[] args) {
-    int a = 10;
-    double b = 20.5;
-    float c = 30.5f;
-    long i = 53443;
-    char cha = 'A';
-    boolean d = true;
-    System.out.println(a + " " + "Hello, World!");
+    Keyboard k = new Keyboard();
+    k.keys = 101;
+    k.color = "black";
+    System.out.println("Keys: " + k.keys);
+    System.out.println("Color: " + k.color);
+    k.pressed();
+    k.throwIt();
 
-    show();
+    AdvanceKeyboard ak = new AdvanceKeyboard();
+    ak.keys = 102;
+    ak.color = "white";
+    System.out.println("Keys: " + ak.keys);
+    System.out.println("Color: " + ak.color);
   }
 
-  public static void show() {
-    System.out.println("Some Show");
-  }
 }
